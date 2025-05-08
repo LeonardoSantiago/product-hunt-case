@@ -10,6 +10,18 @@ const Container = styled.div`
     width: 35%;
     padding: 0 20px;
     padding-bottom: 20px;
+
+    @media (max-width: 1024px) {
+        width: 60%;
+    }
+
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+
+    @media (max-width: 480px) {
+        width: 95%;
+    }
 `
 const Header = styled.div`
     display: flex;
@@ -31,8 +43,6 @@ const Apresentation = styled.div`
     border-radius: 20px;
     padding: 25px;
     background: #fff;
-
-
 
     .slick-prev {
         left: -23px

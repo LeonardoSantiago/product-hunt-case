@@ -32,6 +32,22 @@ const Image = styled.img<{ 'data-testid': string}>`
   height: 40px;
   border-radius: 10px;
   margin-right: 15px;
+
+    @media (max-width: 1024px) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @media (max-width: 768px) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @media (max-width: 480px) {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+    }
 `
 
 const InfoContainer = styled.div`
@@ -46,6 +62,9 @@ const Title = styled.h3`
   color: #222;
   margin: 0;
 
+    @media (max-width: 480px) {
+      font-size: 14px
+    }
 
 `
 
@@ -57,7 +76,7 @@ const Description = styled.p`
 
 const Votes = styled.div`
   position: absolute;
-  top: 25px;
+  top: 15px;
   right: -9px;
   background: #fff;
   padding: 6px 10px;
@@ -68,6 +87,12 @@ const Votes = styled.div`
   align-items: center;
   flex-direction: column;
   z-index: 1;
+
+   @media (max-width: 480px) {
+      padding: 2px 8px
+      top: 11px
+      right: -12px
+    }
 
   &:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -80,11 +105,20 @@ const Votes = styled.div`
 
 const VotesIcon = styled(FontAwesomeIcon)`
   font-size: 14px;
+
+   @media (max-width: 480px) {
+      font-size: 12px
+    }
+
 `
 
 const VotesText = styled.span`
   margin: 0;
   font-size: 12px;
+
+   @media (max-width: 480px) {
+      font-size: 10px
+    }
 `
 
 
