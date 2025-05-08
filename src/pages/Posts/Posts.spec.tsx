@@ -5,7 +5,7 @@ import { vi, describe, it, expect, beforeEach } from 'vitest';
 import { useFetchPosts } from './useFetchPosts';
 vi.mock('@core', async () => ({
     Navbar: () => <div data-testid="navbar" />,
-    Tabs: ({ tabs, activeTab }: any) => <div data-testid="tabs">{activeTab}</div>,
+    Tabs: ({ activeTab }: any) => <div data-testid="tabs">{activeTab}</div>,
 }));
 
 vi.mock('./components/CardList/CardList', async () => ({
