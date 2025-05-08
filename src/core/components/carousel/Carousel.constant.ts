@@ -5,4 +5,4 @@ export const  SETTINGS_CAROUSEL = {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,  
-};
+};  

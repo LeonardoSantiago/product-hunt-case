@@ -36,13 +36,17 @@ const BackButton = styled(FontAwesomeIcon)`
 
 const Apresentation = styled.div`
     width: 100%;
-    object-fit: cover;
     border-radius: 20px;
     margin: 20px 0;
     box-sizing: border-box;
     border-radius: 20px;
     padding: 25px;
     background: #fff;
+    height: 60%;
+
+    .slick-slider {
+        height: 100%;
+    }
 
     .slick-prev {
         left: -23px
